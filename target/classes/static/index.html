@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Travellab - a destination routing service for places in Singapore.">
+
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Travellab</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<header>
+    <nav>
+        <img src="css/img/travellab_logo.png" alt="Travellab logo" class="logo">
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations" class="js--scroll-des">Sample Destinations</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-text-box">
+        <h1>Destinations Routing in a Lab</h1>
+        <a class = "btn btn-main js--scroll-working" href="#working">Explore!</a>
+    </div>
+</header>
+
+<div class = "row">
+    <section class = "working-features js--working" id="working">
+        <div class = "row">
+            <h2>How it works</h2>
+            <p class="motto">
+                Hello, we are Travellab.<br>
+                For the current development version, our destinations are generated randomly.<br>
+                Below are the steps on how our platform works<br>
+            </p>
+        </div>
+        <div class = "row">
+            <div class = "col span-1-of-2">
+                <div class = "plan-box">
+                    <div>
+                        <h3>Steps</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Scrape destinations name</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Generate random set of destinations</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Find the minimum destination pair</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Generate the route</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class = "btn btn-sub" href="/result">Try it now</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col span-1-of-2">
+                <div class = "plan-box">
+                    <div>
+                        <h3>Benefit</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Ideal for first-timer</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Simple</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> Time-saving</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon> 4 destinations daily</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class = "btn btn-sub" href="/result">Try it now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class = "sample-destinations js--destinations" id="destinations">
+    <div class = "row">
+        <h2>Sample Destinations</h2>
+    </div>
+    <ul class = "destinations-showcase">
+        <li>
+            <figure class="destinations-photo">
+                <img src = "css/img/cloud_forest.jpg" alt="Marina Bay Sands">
+            </figure>
+        </li>
+        <li>
+            <figure class="destinations-photo">
+                <img src = "css/img/esplanade.jpg" alt="Marina Bay Sands">
+            </figure>
+        </li>
+        <li>
+            <figure class="destinations-photo">
+                <img src = "css/img/gardens1.jpg" alt="Marina Bay Sands">
+            </figure>
+        </li>
+        <li>
+            <figure class="destinations-photo">
+                <img src = "css/img/orchard.jpg" alt="Marina Bay Sands">
+            </figure>
+        </li>
+        <li>
+            <figure class="destinations-photo">
+                <img src = "css/img/jurong_bird_park.jpg" alt="Marina Bay Sands">
+            </figure>
+        </li>
+    </ul>
+
+
+</section>
+<footer>
+    <div class="row">
+        <div class="col span-1-of-2">
+            <ul class="footer-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col span-1-of-2">
+            <ul class="social-links">
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <p class="copyright">
+            Copyright &copy; 2020 by Travellab. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

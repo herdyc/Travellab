@@ -1,0 +1,342 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reusable Components */
+
+section {
+    padding: 40px 0;
+}
+
+
+/* Headings */
+h1,
+h2,
+h3{
+        
+    font-family: sans-serif;
+}
+
+h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+h2{
+    color: #1e90ff;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+}
+
+/* For the Straight blue line below */
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2196F3;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.row {
+    max-width: 1080px;
+    margin: 0 auto; 
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { 
+    margin-left: 0; 
+}
+
+.span-2-of-2 {
+	width: 100%;
+}
+
+.span-1-of-2 {
+	width: 49.2%;
+}
+
+
+/* Body */
+body {
+	font-family: source-sans-pro;	
+	margin: 0 0 0 0;
+	font-style: normal;
+	font-weight: 200;	
+}
+
+/* Container */
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Header */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/sg.jpg);
+    background-size: cover;
+    background-position: center;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.8;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 18%;
+    text-align: center;
+    transform: scale(1.2);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    transform: scale(0.7);
+}
+
+
+/* Navigations */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #1e90ff;
+    border-bottom: 1px solid #1e90ff;
+}
+
+
+/* Working Features */
+
+.working-features {
+    background-color: #f4f4f4;
+}
+
+.motto {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 55%;
+    margin-left: 23%;
+    box-shadow: 0 2px 2px #808080;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom:  1px solid #e8e8e8;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box div ul li {
+    padding: 5px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+
+/* Buttons */
+/* link and visited state removed from both buttons */
+.btn-main:link,
+.btn-main:visited{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-weight: 200;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.btn-main{
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn-sub{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 40px;
+    font-weight: 200;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-main:hover,
+.btn-main:active,
+.btn-sub:hover,
+.btn-sub:active{
+    background-color: rgba(30, 144, 255, 0.8);
+    border: 1px solid #1e90ff;
+}
+
+/* Destinations */
+.sample-destinations {
+    padding-top: 60px;
+}
+
+.destinations-showcase {
+    margin-top: 30px;
+    list-style: none;
+    width: 100%;
+}
+
+.destinations-showcase li {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+.destinations-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Ensure img is as wide as its container */
+.destinations-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.destinations-photo img:hover {
+    transform: scale(1.03); /* To remove the white gap under the image */
+    opacity: 1;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(64,64,64);
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: rgba(96,160,255);
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: azure;  
+}
+
+.copyright {
+    text-align: center;
+    color: azure;
+    padding: 20px 0 10px 0;
+}
